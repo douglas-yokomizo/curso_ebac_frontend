@@ -50,7 +50,7 @@ button:hover{
     transition: 0.5s;
 }
 
-.error-message{
+.error-message, .limite{
     color: red;
     font-size: 14px;
     display: none;
