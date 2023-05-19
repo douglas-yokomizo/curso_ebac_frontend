@@ -7,7 +7,6 @@ form.addEventListener('submit', function(confere){
     limite = document.querySelector('.limite')
     if(qtdPessoas > capacidadeMax)
     {
-        console.log("Limite de pessoas ultrapassado")
         confere.preventDefault();
         limite.style.display = "block";
 
