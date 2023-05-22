@@ -19,15 +19,17 @@
         <img src="images/todo.png" />
         <h1>Lista de tarefas</h1>
         <form>
-          <input type="text" placeholder="Insira sua tarefa" />
-          <button type="submit">Adicionar tarefa +</button>
+          <input
+            id="inserir-tarefa"
+            type="text"
+            placeholder="Insira sua tarefa"
+            required
+          />
+          <button type="submit">+ Adicionar tarefa</button>
         </form>
       </header>
 
-      <ul class="tasks">
-        <li id="task"><a href="#">tarefa 1</a></li>
-        <li id="task"><a href="#">tarefa 2</a></li>
-      </ul>
+      <ul class="tasks"></ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="main.js"></script>

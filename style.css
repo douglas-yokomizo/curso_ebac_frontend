@@ -6,7 +6,7 @@
 }
 
 a{
-    text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited , a:hover {
@@ -17,9 +17,8 @@ a:visited , a:hover {
 
 body{
     height: 100vh;
-    margin-top: 5rem;
     border: 3px solid black;
-    margin: 0 12%;
+    margin:1rem 12% 0 12%;
 }
 
 .container {
@@ -87,4 +86,8 @@ ul {
 
 ul li {
     font-size: 24px;
+}
+
+.done{
+    text-decoration: line-through;
 }
