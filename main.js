@@ -16,3 +16,9 @@ $('form').on('submit', function(adicionarTarefa){
 $('ul').on('click', 'a', function() {
     $(this).css("text-decoration", "line-through");
   });
+
+$('form').on('reset', function(limparLista){
+    limparLista.preventDefault();
+
+    $('ul').empty();
+})
