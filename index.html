@@ -11,6 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript" src="./src/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="./src/js/jquery.validate.min.js"></script>
+<script src="./src/js/messages_pt_BR.min.js"></script>
 
 <body>
   <main>
@@ -30,7 +34,7 @@
         <input type="text" placeholder="Nome completo*" id="name" autofocus name="nome" />
         <input id="email" type="email" placeholder="Email*" name="email" />
         <input id="phone" type="tel" placeholder="Telefone*" name="telefone" />
-        <input id="cep" type="tel" placeholder="CEP*" name="cep" />
+        <input id="cep" type="text" placeholder="CEP*" name="cep" />
         <input id="cpf" type="text" placeholder="CPF*" name="cpf" />
         <p>* campos obrigatórios</p>
         <button class="submit" type="submit">Enviar</button>
@@ -38,9 +42,6 @@
     </div>
   </main>
 
-  <script src="./src/js/jquery.mask.min.js"></script>
-  <script src="./src/js/jquery.validate.js"></script>
-  
   <script src="./src/js/validacao.js"></script>
 </body>
 
