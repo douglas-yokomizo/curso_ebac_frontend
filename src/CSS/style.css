@@ -71,6 +71,7 @@ form input {
 
 label.error{
   color: red;
+  font-size: 14px;
 }
 
 form input.message {
