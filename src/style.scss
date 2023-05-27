@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'colors';
+@import 'header';
+@import 'produtos';
+@import 'responsivo';
+
+body {
+    background-color: $corPrincipal;
+}
+
+section {
+    padding: 56px 0;
+}
+
