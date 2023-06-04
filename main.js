@@ -27,8 +27,8 @@ function Produto(nome, valor, tipo) {
 
 function Tenis(tamanho) {
     let _tamanho = tamanho
-
-    new Produto(this, tamanho);
+    
+    Produto.call(this, tamanho);
     this.tamanho = tamanho;
 
     this.setTamanho = function (tamanho) {
@@ -39,12 +39,11 @@ function Tenis(tamanho) {
         return _tamanho
     }
 }
-Tenis.prototype = new Produto();
 
 function Telefone(marca) {
     let _marca = marca
 
-    new Produto(this, marca);
+    Produto.call(this, marca);
 
     this.setMarca = function (marca) {
         return _marca = marca
@@ -54,12 +53,11 @@ function Telefone(marca) {
         return _marca
     };
 }
-Telefone.prototype = new Produto();
 
 function Computador(memoria){
     let _memoria = memoria
 
-    new Produto(this, memoria);
+    Produto.call(this, memoria);
 
     this.getMemoria = function(){
         return _memoria
@@ -68,7 +66,6 @@ function Computador(memoria){
         return _memoria = memoria
     }
 }
-Computador.prototype = new Produto();
 
 
 
