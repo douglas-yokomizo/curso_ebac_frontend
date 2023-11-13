@@ -23,8 +23,14 @@ describe('Testes para features da lista de contatos', () => {
     })
 
     it('Deve excluir um contato', () => {
-        cy.get('.sc-beqWaB').first()
-        cy.get('.delete').first().click()
-        cy.get('h2').should('contain', 8)
+
+        cy.get('.contato').its('length').then((contactsQtd) => {
+
+            cy.get('.delete').first().click()
+
+            cy.get('.contato').its('length').should('eq', contactsQtd - 1)
+
+        })
+
     })
 })
